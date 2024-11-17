@@ -1,0 +1,10 @@
+name: getConfig
+description: returns opctl config for repos in github.com/todelete20220324
+inputs: {}
+outputs:
+  config:
+    description: config for repos in github.com/todelete20220324
+    object:
+      default:
+        ops:
+          - ref: github.com/opspec-pkgs/github.release.create#2.0.0/.opspec
