@@ -1,0 +1,16 @@
+name: test
+run:
+  serial:
+    - op:
+        ref: $(../getConfig)
+        outputs:
+          ops:
+    - container:
+        cmd:
+          - sh
+          - -ce
+          - ls -al /ops
+        dirs:
+          /ops: $(ops)
+        image:
+          ref: alpine
