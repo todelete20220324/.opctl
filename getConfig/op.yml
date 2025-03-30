@@ -1,13 +1,7 @@
 name: getConfig
-description: returns opctl config for repos in github.com/todelete20220324
-inputs: {}
+description: returns config for repos in this organization
 outputs:
-  ops:
+  defaultOps:
+    description: default ops
     dir:
-      default: $(./ops)
-  # config:
-  #   description: config for repos in github.com/todelete20220324
-  #   object:
-  #     default:
-  #       ops:
-  #         - ref: github.com/opctl/opctl#v0.1.56/.opspec
+      default: $(./defaultOps)

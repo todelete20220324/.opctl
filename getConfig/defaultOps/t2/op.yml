@@ -1,0 +1,9 @@
+name: t2
+description: description of t2
+run:
+  container:
+    image:
+      ref: alpine
+    cmd:
+      - echo
+      - hello from t2
